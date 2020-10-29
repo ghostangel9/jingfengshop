@@ -1,0 +1,11 @@
+.btn button {
+    margin: 10px;
+}
+
+.card {
+    padding: 0 5px;
+}
+
+.card .card-padding {
+    padding: 0.5rem;
+}

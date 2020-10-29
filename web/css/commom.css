@@ -1,0 +1,60 @@
+.nav {
+    height: 120px;
+    background: rgba(255, 132, 182, .8);
+}
+
+.nav1 {
+    width: 100%;
+    height: 30px;
+    background: #cccccc;
+}
+
+.nav2 {
+    width: 100%;
+    height: 90px;
+    padding: 0 30px;
+}
+
+
+.bg {
+    width: 209px;
+    height: 75px;
+}
+
+.bg h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px 20px;
+}
+
+.bg p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0 20px;
+}
+
+.client {
+    width: 90px;
+    height: 80px;
+    background: url(../images/client.png);
+}
+
+.bg1 {
+    background: url(../images/b1.png);
+}
+
+.bg2 {
+    background: url(../images/b2.png);
+}
+
+.bg3 {
+    background: url(../images/b3.png);
+}
+
+.bg4 {
+    background: url(../images/b4.png);
+}
+
+.bg5 {
+    background: url(../images/b5.png);
+}
