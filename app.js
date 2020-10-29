@@ -2,6 +2,13 @@
 var express = require("express");
 var mysql = require("mysql");
 var bodyParser = require("body-parser");
+// 设置mysql数据库的ip，用户名，密码，数据库名
+var mysql_info = {
+    host: "118.31.75.249",
+    user: "jingfengshop",
+    password: "jingfengshop",
+    database: "jingfengshop"
+}
 
 // express是一个函数，执行之后得到一个服务器
 var app = express();
@@ -18,12 +25,7 @@ app.get('/checkusername', function (req, res) {
     // 获取前端提交的数据
     var username = req.query.username;
     // 定义数据库连接
-    var connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'jingfengshop'
-    })
+    var connection = mysql.createConnection(mysql_info)
     // 连接数据库
     connection.connect();
     // 数据库查询
@@ -52,12 +54,7 @@ app.post('/register', function (req, res) {
         password
     } = req.body;
     // 定义数据库连接
-    var connection = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "root",
-        database: "jingfengshop"
-    })
+    var connection = mysql.createConnection(mysql_info)
     // 连接数据库
     connection.connect();
     // 执行查询语句
@@ -85,12 +82,7 @@ app.post("/login", function (req, res) {
         password
     } = req.body;
     // 建立数据库连接
-    var connection = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "root",
-        database: "jingfengshop"
-    })
+    var connection = mysql.createConnection(mysql_info)
     // 连接数据库
     connection.connect();
     // 执行查询语句
@@ -122,12 +114,7 @@ app.post("/login", function (req, res) {
 app.get("/list", function(req, res){
     var {page, num} = req.query;
     // 定义数据库连接
-    var connection = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "root",
-        database: "jingfengshop"
-    })
+    var connection = mysql.createConnection(mysql_info)
     // 连接数据库
     connection.connect();
     // 执行查询语句
@@ -157,12 +144,7 @@ app.get("/detail", function(req, res){
     var goods_id = req.query.shopID;
     
     // 定义数据库连接
-    var connection = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: "root",
-        database: "jingfengshop"
-    })
+    var connection = mysql.createConnection(mysql_info)
 
     // 连接数据库
     connection.connect();
