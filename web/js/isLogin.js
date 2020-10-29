@@ -12,6 +12,6 @@
 
     var cookie = getCookie("isLogin");
     if (!cookie) {
-        location.href = "http://localhost/demo5/web/html/login.html";
+        location.href = "./login.html";
     }
 })();
