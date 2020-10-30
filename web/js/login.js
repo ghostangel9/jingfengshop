@@ -29,7 +29,6 @@
                 alert("登陆失败，请检查用户名密码！")
             } else {
                 alert("恭喜，登录成功！Have a good time!");
-                document.cookie = "isLogin=true; max-age=1200; path=/";
                 location.href = "./list.html";
             }
         })
