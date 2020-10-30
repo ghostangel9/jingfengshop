@@ -1,24 +1,81 @@
 .nav {
-    height: 120px;
+    height: 126px;
     background: rgba(255, 132, 182, .8);
 }
 
 .nav1 {
     width: 100%;
-    height: 30px;
-    background: #cccccc;
+    height: 32px;
+    background: #eeeeee;
+}
+/* ------------------top------------------ */
+
+.top {
+    width: 1190px;
+    height: 26px;
+    margin: auto;
+    padding-top: 3px;
 }
 
+.top ul {
+    float: right;
+}
+
+.top ul li {
+    float: left;
+    position: relative;
+}
+
+.top ul a {
+    font-size: 12px;
+    color: #313131;
+    line-height: 16px;
+}
+
+/* 设置每一个li的左右填充和右边框 */
+.top ul>li:nth-of-type(1) {
+    padding: 0 16px;
+    border-right: 1px solid #d5d5d5;
+
+}
+
+.top ul>li:nth-of-type(2) {
+    padding: 0 26px 0 15px;
+    border-right: 1px solid #d5d5d5;
+}
+
+.top ul>li:nth-of-type(3) {
+    padding: 0 26px 0 30px;
+    border-right: 1px solid #d5d5d5;
+
+}
+
+.top ul>li:nth-of-type(4) {
+    padding: 0 16px 0 15px;
+    border-right: 1px solid #d5d5d5;
+}
+
+.top ul>li:nth-of-type(5) {
+    padding: 0 16px 0 35px;
+    border-right: 1px solid #d5d5d5;
+}
+
+.top ul>li:nth-of-type(6) {
+    padding: 0 16px 0 15px;
+}
+/* -------------------------------------------nav2------------------------------------------- */
 .nav2 {
     width: 100%;
     height: 90px;
-    padding: 0 30px;
+    padding: 5px 30px;
 }
 
 
 .bg {
+    position: relative;
     width: 209px;
     height: 75px;
+    z-index: 3;
 }
 
 .bg h4 {
@@ -31,6 +88,15 @@
     font-size: 14px;
     color: #ffffff;
     margin: 0 20px;
+}
+
+.bg img{
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
 }
 
 .client {
@@ -57,4 +123,50 @@
 
 .bg5 {
     background: url(../images/b5.png);
+}
+
+/* -----------top_sprites----------- */
+.pic {
+    background-image: url("../images/top_icon.png");
+    display: block;
+}
+
+/* 箭头 */
+.pic_1 {
+    background-position: -0px -0px;
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* 手机 */
+.pic_2 {
+    background-position: -35px -0px;
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+}
+
+/* QQ */
+.pic_3 {
+    background-position: -65px -0px;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 7px;
+    left: 13px;
+}
+
+/* 购物车 */
+.pic_4 {
+    background-position: -95px -0px;
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    top: 8px;
+    left: 12px;
 }

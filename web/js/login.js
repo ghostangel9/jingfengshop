@@ -1,5 +1,21 @@
 ;
 (function () {
+    // 判断是否是在登录状态
+    function getCookie(key) {
+        var arr = document.cookie.split(";");
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].split("=")[0] === key) {
+                return arr[i].split("=")[1];
+            }
+        }
+    }
+
+    var cookie = getCookie("isLogin");
+    if (cookie) {
+        console.log(1);
+        location.href = "./list.html";
+    }
+
     // 获取元素
     var usernameInp = document.getElementById("username");
     var passwordInp = document.getElementById("password");
